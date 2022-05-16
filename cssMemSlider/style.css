@@ -116,4 +116,19 @@
     margin-left: -75%;
   }
   
-  
+  input#r1:checked ~ .label_box >label> .span1{
+    background-color: rgba(174, 28, 28, 0.9);
+  }
+  input#r2:checked ~ .label_box >label> .span2{
+    background-color: rgba(174, 28, 28, 0.9);
+  }
+  input#r3:checked ~ .label_box >label> .span3{
+    background-color: rgba(174, 28, 28, 0.9);
+  }
+  input#r4:checked ~ .label_box >label> .span4 {
+      background-color: rgba(174, 28, 28, 0.9);
+  }
+
+  .wrapper .slider_wrapper .slides:contains-selector(.slide )  {
+    background-color: red;
+    }
