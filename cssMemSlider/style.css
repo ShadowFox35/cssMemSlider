@@ -111,7 +111,7 @@
   #r3:checked ~ div .sl_1 {
     margin-left: -50%;
   }
-  
+   
   #r4:checked ~ div .sl_1 {
     margin-left: -75%;
   }
@@ -131,4 +131,23 @@
 
   .wrapper .slider_wrapper .slides:contains-selector(.slide )  {
     background-color: red;
+    }
+
+    @media screen and (max-width: 768px) {
+      .slides {
+        height:40%;
+      }    
+      .slider_wrapper {
+      width: 60%;
+      }
+      .label_box {
+        justify-content: center;
+        margin: auto;
+        margin-top: 1em;
+      }
+      .title{
+        font-size: 1.5em;
+        margin-top: 2.5em;
+      }
+      
     }
