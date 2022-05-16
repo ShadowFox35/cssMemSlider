@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  }
+
+.wrapper{
+  background-color: #2a3c45;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  }
+  
+.slider_wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 37rem;
+  margin: 0 2em;
+  }
+
+.title {
+  color: aliceblue;
+  font-size: 2em;
+  font-family: sans-serif;
+  }
+
+.slides {
+  width: 100%;
+  display: flex;
+  overflow: unset;
+  flex-direction: column;
+   }
+
+.slides>.slider{
+   width: 400%;
+  display: flex;
+  overflow: unset;
+  }
+.slide {
+  width: 25%;
+  transition: all 0.6s ease;
+  overflow: unset;
+  }
+  
+.img {
+  width: 100%;
+  height: 100%;
+  }
+
+  .label_box {
+    padding: 3.1em 0px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    display: flex;
+    width: 100%;
+  }
+  
+  .label {    
+    margin-top: -175%;
+    width: 1em;
+    padding: 1vh;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .label:hover {
+    opacity: 2;
+    transform:scale(1.3);
+  }
+  .label:active {
+   cursor: progress;
+  }
+  .label span {
+    padding: 0.7em;
+    cursor: pointer;
+    background-color: rgb(247, 240, 240);
+    opacity: .5;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+  }
+  
+  .label span:hover {
+    opacity: 1;
+    transform:scale(1.1);
+  }
+  .label span:active {
+    cursor: progress;
+  }
+  
+  input[name="r"] {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+
+  #r2:checked ~ div .sl_1 {
+    margin-left: -25%;
+  }
+  
+  #r3:checked ~ div .sl_1 {
+    margin-left: -50%;
+  }
+   
+  #r4:checked ~ div .sl_1 {
+    margin-left: -75%;
+  }
+  
+  input#r1:checked ~ .label_box >label> .span1{
+    background-color: rgba(174, 28, 28, 0.9);
+  }
+  input#r2:checked ~ .label_box >label> .span2{
+    background-color: rgba(174, 28, 28, 0.9);
+  }
+  input#r3:checked ~ .label_box >label> .span3{
+    background-color: rgba(174, 28, 28, 0.9);
+  }
+  input#r4:checked ~ .label_box >label> .span4 {
+      background-color: rgba(174, 28, 28, 0.9);
+  }
+
+  .wrapper .slider_wrapper .slides:contains-selector(.slide )  {
+    background-color: red;
+    }
+
+    @media screen and (max-width: 400px) {
+    
+      .label_box {
+        justify-content: center;
+        margin: auto;
+        margin-top: -0.5em;
+      }
+      .title{
+        font-size: 1.5em;
+        margin-top: 1.2em;
+      }
+    }
